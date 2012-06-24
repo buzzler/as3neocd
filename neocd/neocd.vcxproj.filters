@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\cdrom">
+      <UniqueIdentifier>{12e99091-4251-4e8c-bec2-af355d7280c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\cdaudio">
+      <UniqueIdentifier>{8a583fcb-eb31-44ec-89cf-c20fbae62db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\cdaudio">
+      <UniqueIdentifier>{fc805645-ce74-499d-b8d9-1b03d5d865e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\cdrom">
+      <UniqueIdentifier>{c7b6e6c9-6052-4dd1-90da-903bf97a6e2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\input">
+      <UniqueIdentifier>{d2fda445-38d4-4bf2-88c1-6c3ea1905e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\input">
+      <UniqueIdentifier>{4ba205df-24c2-4b2d-bf9f-3ed1ccb93c18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\mc68000">
+      <UniqueIdentifier>{41906796-f5eb-4294-ac00-4bf37de4bb20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\mc68000">
+      <UniqueIdentifier>{a5cd1abd-8fe4-4eef-8714-566d7493cbb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\memory">
+      <UniqueIdentifier>{9c1f4dba-a0bd-4183-b330-b6ce672fce17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\memory">
+      <UniqueIdentifier>{5c7c7d6e-11c9-4d16-b192-726a101447f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\sound">
+      <UniqueIdentifier>{c322242e-1054-4f92-8442-e0f63f48a720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\sound">
+      <UniqueIdentifier>{ca4b6890-9032-4e6a-b81a-cf105b011c2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\video">
+      <UniqueIdentifier>{294780f8-df4f-46d1-af64-feeb54870eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\video">
+      <UniqueIdentifier>{c1fbdb12-dd01-4d55-ba93-2ac631ac20bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\z80">
+      <UniqueIdentifier>{4cc5c865-b3f7-4675-b1d5-533b6f15dd99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\z80">
+      <UniqueIdentifier>{67e9f0bc-f2f2-43c2-a61f-8855ee44fc0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\mc68000\preprocess">
+      <UniqueIdentifier>{6f4ce38b-b270-4d5d-922f-acf490b1c26a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="icon.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="neocd.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pd4990a.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="cdaudio\cdaudio.h">
+      <Filter>헤더 파일\cdaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="cdrom\cdrom.h">
+      <Filter>헤더 파일\cdrom</Filter>
+    </ClInclude>
+    <ClInclude Include="input\input.h">
+      <Filter>헤더 파일\input</Filter>
+    </ClInclude>
+    <ClInclude Include="mc68000\m68k.h">
+      <Filter>헤더 파일\mc68000</Filter>
+    </ClInclude>
+    <ClInclude Include="mc68000\m68kconf.h">
+      <Filter>헤더 파일\mc68000</Filter>
+    </ClInclude>
+    <ClInclude Include="mc68000\m68kcpu.h">
+      <Filter>헤더 파일\mc68000</Filter>
+    </ClInclude>
+    <ClInclude Include="mc68000\m68kmame.h">
+      <Filter>헤더 파일\mc68000</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\memory.h">
+      <Filter>헤더 파일\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\2610intf.h">
+      <Filter>헤더 파일\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\ay8910.h">
+      <Filter>헤더 파일\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\fm.h">
+      <Filter>헤더 파일\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\sound.h">
+      <Filter>헤더 파일\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\streams.h">
+      <Filter>헤더 파일\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\timer.h">
+      <Filter>헤더 파일\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="sound\ymdeltat.h">
+      <Filter>헤더 파일\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="video\2xsai.h">
+      <Filter>헤더 파일\video</Filter>
+    </ClInclude>
+    <ClInclude Include="video\video.h">
+      <Filter>헤더 파일\video</Filter>
+    </ClInclude>
+    <ClInclude Include="z80\mz80.h">
+      <Filter>헤더 파일\z80</Filter>
+    </ClInclude>
+    <ClInclude Include="z80\z80intrf.h">
+      <Filter>헤더 파일\z80</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="neocd.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pd4990a.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="swab.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cdaudio\cdaudio.c">
+      <Filter>소스 파일\cdaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="cdrom\beos.cc">
+      <Filter>소스 파일\cdrom</Filter>
+    </ClCompile>
+    <ClCompile Include="cdrom\cdrom.c">
+      <Filter>소스 파일\cdrom</Filter>
+    </ClCompile>
+    <ClCompile Include="cdrom\dc.c">
+      <Filter>소스 파일\cdrom</Filter>
+    </ClCompile>
+    <ClCompile Include="cdrom\linux.c">
+      <Filter>소스 파일\cdrom</Filter>
+    </ClCompile>
+    <ClCompile Include="cdrom\win32.c">
+      <Filter>소스 파일\cdrom</Filter>
+    </ClCompile>
+    <ClCompile Include="input\input.c">
+      <Filter>소스 파일\input</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\m68k_in.c">
+      <Filter>소스 파일\mc68000</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\m68kcpu.c">
+      <Filter>소스 파일\mc68000</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\m68kdasm.c">
+      <Filter>소스 파일\mc68000</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\m68kmake.c">
+      <Filter>소스 파일\mc68000</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\m68kmame.c">
+      <Filter>소스 파일\mc68000</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\neocd68k.c">
+      <Filter>소스 파일\mc68000</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\memory.c">
+      <Filter>소스 파일\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\2610intf.c">
+      <Filter>소스 파일\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\ay8910.c">
+      <Filter>소스 파일\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\fm.c">
+      <Filter>소스 파일\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\sound.c">
+      <Filter>소스 파일\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\streams.c">
+      <Filter>소스 파일\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\timer.c">
+      <Filter>소스 파일\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\ymdeltat.c">
+      <Filter>소스 파일\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="video\2xsai.c">
+      <Filter>소스 파일\video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\draw_fix.c">
+      <Filter>소스 파일\video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\video.c">
+      <Filter>소스 파일\video</Filter>
+    </ClCompile>
+    <ClCompile Include="z80\makez80.c">
+      <Filter>소스 파일\z80</Filter>
+    </ClCompile>
+    <ClCompile Include="z80\z80intrf.c">
+      <Filter>소스 파일\z80</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\preprocess\m68kcpu.c">
+      <Filter>소스 파일\mc68000\preprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\preprocess\m68kopac.c">
+      <Filter>소스 파일\mc68000\preprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\preprocess\m68kopdm.c">
+      <Filter>소스 파일\mc68000\preprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\preprocess\m68kopnz.c">
+      <Filter>소스 파일\mc68000\preprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="mc68000\preprocess\m68kops.c">
+      <Filter>소스 파일\mc68000\preprocess</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\2xSaImmx.asm">
+      <Filter>소스 파일\video</Filter>
+    </None>
+    <None Include="z80\mz80.txt">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="sound\lgpl.txt">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="win32\neocd.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32\neocd.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

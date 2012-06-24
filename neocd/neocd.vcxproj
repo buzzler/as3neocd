@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1804A96F-77FD-4509-90B7-112D0637FAE5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>neocd</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;D:\SDL-1.2.15\include;</IncludePath>
+    <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;D:\SDL-1.2.15\lib\x64</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="cdaudio\cdaudio.h" />
+    <ClInclude Include="cdrom\cdrom.h" />
+    <ClInclude Include="icon.h" />
+    <ClInclude Include="input\input.h" />
+    <ClInclude Include="mc68000\m68k.h" />
+    <ClInclude Include="mc68000\m68kconf.h" />
+    <ClInclude Include="mc68000\m68kcpu.h" />
+    <ClInclude Include="mc68000\m68kmame.h" />
+    <ClInclude Include="memory\memory.h" />
+    <ClInclude Include="neocd.h" />
+    <ClInclude Include="pd4990a.h" />
+    <ClInclude Include="sound\2610intf.h" />
+    <ClInclude Include="sound\ay8910.h" />
+    <ClInclude Include="sound\fm.h" />
+    <ClInclude Include="sound\sound.h" />
+    <ClInclude Include="sound\streams.h" />
+    <ClInclude Include="sound\timer.h" />
+    <ClInclude Include="sound\ymdeltat.h" />
+    <ClInclude Include="video\2xsai.h" />
+    <ClInclude Include="video\video.h" />
+    <ClInclude Include="z80\mz80.h" />
+    <ClInclude Include="z80\z80intrf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cdaudio\cdaudio.c" />
+    <ClCompile Include="cdrom\beos.cc" />
+    <ClCompile Include="cdrom\cdrom.c" />
+    <ClCompile Include="cdrom\dc.c" />
+    <ClCompile Include="cdrom\linux.c" />
+    <ClCompile Include="cdrom\win32.c" />
+    <ClCompile Include="input\input.c" />
+    <ClCompile Include="mc68000\m68kcpu.c" />
+    <ClCompile Include="mc68000\m68kdasm.c" />
+    <ClCompile Include="mc68000\m68kmake.c" />
+    <ClCompile Include="mc68000\m68kmame.c" />
+    <ClCompile Include="mc68000\m68k_in.c" />
+    <ClCompile Include="mc68000\neocd68k.c" />
+    <ClCompile Include="mc68000\preprocess\m68kcpu.c" />
+    <ClCompile Include="mc68000\preprocess\m68kopac.c" />
+    <ClCompile Include="mc68000\preprocess\m68kopdm.c" />
+    <ClCompile Include="mc68000\preprocess\m68kopnz.c" />
+    <ClCompile Include="mc68000\preprocess\m68kops.c" />
+    <ClCompile Include="memory\memory.c" />
+    <ClCompile Include="neocd.c" />
+    <ClCompile Include="pd4990a.c" />
+    <ClCompile Include="sound\2610intf.c" />
+    <ClCompile Include="sound\ay8910.c" />
+    <ClCompile Include="sound\fm.c" />
+    <ClCompile Include="sound\sound.c" />
+    <ClCompile Include="sound\streams.c" />
+    <ClCompile Include="sound\timer.c" />
+    <ClCompile Include="sound\ymdeltat.c" />
+    <ClCompile Include="swab.c" />
+    <ClCompile Include="video\2xsai.c" />
+    <ClCompile Include="video\draw_fix.c" />
+    <ClCompile Include="video\video.c" />
+    <ClCompile Include="z80\makez80.c" />
+    <ClCompile Include="z80\z80intrf.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sound\lgpl.txt" />
+    <None Include="video\2xSaImmx.asm" />
+    <None Include="win32\neocd.ico" />
+    <None Include="z80\mz80.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32\neocd.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
