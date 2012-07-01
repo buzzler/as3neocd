@@ -41,7 +41,7 @@ package mc68000
 		public	var cyc_movem_l		:uint;
 		public	var cyc_shift		:uint;
 		public	var cyc_reset		:uint;
-		
+/*		
 		public	function get usp():uint
 		{
 			return this.sp[0];
@@ -80,13 +80,13 @@ package mc68000
 		public	function set sp(value:uint):void
 		{
 			this.sp[15] = value;
-		}
+		}*/
 		
 		/**
 		 * POINTER REFACTORING
 		 */
-		public	var cyc_instruction		:uint;
-		public	var cyc_exception		:uint;
+		public	var cyc_instruction		:Vector.<uint>;
+		public	var cyc_exception		:Vector.<uint>;
 		public	var int_ack_callback	:Function;
 		public	var bkpt_ack_callback	:Function;
 		public	var reset_instr_callback:Function;
