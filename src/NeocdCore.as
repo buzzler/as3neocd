@@ -76,6 +76,8 @@ package
 			title	= "";
 			disk	= new VDisk();
 			loading	= (bitmapData==null) ? new BitmapData(320, 224, false, 0x0):bitmap.bitmapData.clone();
+			
+			init_m68k();
 		}
 		
 		public	function power():void

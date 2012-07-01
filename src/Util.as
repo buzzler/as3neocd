@@ -40,5 +40,32 @@ package
 			}
 			return dest;
 		}
+		
+		public	static function toVector(array:Array, type:String, fixed:Boolean = false):*
+		{
+			var result:*;
+			switch (type)
+			{
+				case "uint":
+					result = new Vector.<uint>(array.length, fixed);
+					break;
+				case "number":
+					result = new Vector.<Number>(array.length, fixed);
+					break;
+				case "function":
+					result = new Vector.<Function>(array.length, fixed);
+					break;
+				case "string":
+					result = new Vector.<String>(array.length, fixed);
+					break;
+			}
+			var i:uint = 0;
+			var total:uint = array.length;
+			while (i<total)
+			{
+				result[i] = array[i++];
+			}
+			return result;
+		}
 	}
 }

@@ -3,6 +3,7 @@ import flash.net.FileReference;
 private	const OPT_OFF				:uint = 0;
 private	const OPT_ON				:uint = 1;
 private	const OPT_SPECIFY_HANDLER	:uint = 2;
+
 private	var M68K_COMPILE_FOR_MAME 		:uint = OPT_OFF;
 private	var M68K_EMULATE_010			:uint = OPT_OFF;
 private	var M68K_EMULATE_EC020			:uint = OPT_OFF;
